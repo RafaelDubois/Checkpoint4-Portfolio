@@ -4,17 +4,22 @@ import {Text, useColorModeValue} from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
-font-weigth: bold;
-font-size:20px;
-display:inline-flex;
-align-items:center
-height: 30px;
-line-height:28px;
-padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  line-height: 25px;
+  padding: 20px;
 
-&:hover img {
-    tranform: rotate(30deg); 
-}`
+  img {
+    transition: 200ms ease;
+  }
+
+  &:hover img {
+    transform: rotate(-30deg);
+  }
+`
 
 const Logo = () => {
      const logoImg = `/images/logo${useColorModeValue('', '-dark')}.png`

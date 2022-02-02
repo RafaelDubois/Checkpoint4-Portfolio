@@ -10,6 +10,7 @@ import {
   MenuItem,
   MenuList,
   Stack,
+  Text,
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
@@ -17,6 +18,7 @@ import ThemeToggleButton from './theme-toggle-button'
 import Logo from './logo'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import React from 'react'
+import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
@@ -74,6 +76,21 @@ const Navbar = props => {
           
           <LinkItem href="/contact" path={path}>
             Contact
+          </LinkItem>
+          <LinkItem
+            _target="_blank"
+            href="https://github.com/RafaelDubois/Checkpoint4-Portfolio"
+            path={path}
+            pl={2}
+            style={{ gap: 4 }}
+            
+          >
+            <Text display="inline-flex"
+            alignItems="center">
+            Source 
+            {''}
+            <IoLogoGithub/>
+            </Text>
           </LinkItem>
         </Stack>
         <Box flex={1} mt={1.5} align="right">

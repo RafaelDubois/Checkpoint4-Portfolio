@@ -9,7 +9,9 @@ import {
   List,
   ListItem,
   Icon,
-  useColorModeValue
+  useColorModeValue,
+  GridItem,
+  Text
 } from '@chakra-ui/react'
 import React from 'react'
 import Paragraph from '../components/paragraph'
@@ -17,12 +19,13 @@ import Section from '../components/section'
 import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import {
-  IoLogoTwitter,
   IoLogoInstagram,
   IoLogoGithub,
   IoLogoLinkedin
 } from 'react-icons/io5'
 import { BioSection, BioYear } from '../components/bio'
+import thumbReact from "../public/images/imageReactNext.jpg"
+
 
 const Page = () => {
   return (
@@ -31,7 +34,7 @@ const Page = () => {
         borderRadius="lg"
         mb={7}
         p={3}
-        mt={3}
+        mt={5}
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
@@ -121,8 +124,8 @@ const Page = () => {
           Studied Psychology at University in Strasbourg, France
         </BioSection>
         <BioSection>
-          <BioYear>2021 to present</BioYear>
-          Studied at WildCodeSchool, a private web-development school based in
+          <BioYear>2021 to now</BioYear>
+          Studied at WildCodeSchool, a private web development school based in
           Strasbourg, France
         </BioSection>
       </Section>
@@ -138,13 +141,92 @@ const Page = () => {
         <Paragraph>
           Art, {' '}
           <Link href="https://www.youtube.com/playlist?list=PL46IFNQW_l3go3wKwe4Hh4sSUwdMj_3Ff/" target="_blank">
-          Music
+          Music,{' '}
           </Link>
-          , Playing Piano, Learning with the web,{' '}
+          Watching content creators,Playing Piano, Learning with the web,{' '}
           <Link href="https://deepdreamgenerator.com/" target="_blank">
             Generating Art with AI
           </Link>
         </Paragraph>
+      </Section>
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title"
+        textUnderlineOffset="3px"
+        textDecorationLine="underline "
+        text-decoration-color={useColorModeValue(
+          'whiteAlpha.500',
+          'whiteAlpha.200'
+        )}>
+          On the web
+        </Heading>
+        <List>
+          <ListItem>
+            <Link href="https://github.com/craftzdog" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >
+                @RafaelDubois
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://twitter.com/craftzdog" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoLinkedin} />}
+              >
+                @RafaelDubois
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://instagram.com/craftzdog" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoInstagram} />}
+              >
+                @rafael_delockslay
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
+        <Heading as="h3" variant="section-title"
+        mb={5} >
+          Tools used to build this website :
+        </Heading>
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem
+            href=""
+            title="ReactJs and Next.js"
+            thumbnail={thumbReact}
+            textAlign='center'
+          >
+            <a href="https://nextjs.org/" target="blank">
+            <Image src="./images/imageReactNext.jpg" height={140} width={240} borderRadius={25}/>
+            </a>
+            <Text fontWeight='bold' mt={4} mb={1}>ReactJs and Next.js</Text>
+            An open-source front-end JavaScript library, and a popular framework.
+          </GridItem>
+          <GridItem textAlign='center'>
+          <a href="https://threejs.org/" target="blank">
+            <Image src="./images/imagethree.png" height={140} width={240} borderRadius={25}/>
+            </a>
+            <Text fontWeight='bold' mt={4} mb={1}>ThreeJs</Text>
+            A 3D framework for React
+          </GridItem>
+        </SimpleGrid>
+
+        <Box align="center" my={4}>
+          <NextLink href="/contact">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              Contact
+            </Button>
+          </NextLink>
+        </Box>
       </Section>
     </Container>
   )

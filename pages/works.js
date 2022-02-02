@@ -20,15 +20,11 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Static html/css site first project after just 3 weeks of studying
-          </WorkGridItem>
-        </Section>
+        
         <Section>
           <WorkGridItem
-            id="walknote"
-            title="walknote"
+            id="Straffic"
+            title="Straffic"
             thumbnail={thumbWalknote}
           >
            A responsive website coded in React.js, using the API of the strasbourg company of transport (CTS) to help people getting informations about transportation in Strasbourg and/or other useful informations like parkings location or tickets point of sales, in an easily usable and fast way
@@ -37,11 +33,16 @@ const Works = () => (
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
+            id="Dr. BonVoyage"
+            title="Dr. BonVoyage"
             thumbnail={thumbFourPainters}
           >
             An app coded in React Native with a real customer, API AWS serverless for the back, this app was made to help people travelling across the world with useful medical informations of many sorts
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem id="" title="" thumbnail={thumbInkdrop}>
+            A Static html/css site first project after just 3 weeks of studying
           </WorkGridItem>
         </Section>
       </SimpleGrid>
