@@ -9,10 +9,11 @@ font-size:20px;
 display:inline-flex;
 align-items:center
 height: 30px;
-line-height:40px;
+line-height:28px;
 padding: 10px;
+
 &:hover img {
-    tranform: rotate(20deg); 
+    tranform: rotate(30deg); 
 }`
 
 const Logo = () => {
@@ -21,12 +22,12 @@ const Logo = () => {
          <Link href="/">
              <a>
                  <LogoBox>
-                     <Image src={logoImg} width={52} height={40} alt='logo'/>
-                     <Text color={useColorModeValue('gray.820', 'whiteAlpha.950')}
+                     <Image src={logoImg} width={43} height={30} alt='logo'/>
+                     <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                      fontFamily='M PLUS Rounded 1c'
                      fontWeight="bold"
                      ml={3}>
-                         Rafaël Dubois
+                         Rafael Dubois
                      </Text>
                  </LogoBox>
              </a>
