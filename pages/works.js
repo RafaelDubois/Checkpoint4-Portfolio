@@ -1,10 +1,10 @@
-import { Container, Heading, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
+import thumbFives from '../public/images/works/Captureprojet1.png'
+import thumbStraffic from '../public/images/works/Captureprojet2.png'
+import thumbDrbonvoyage from '../public/images/works/Captureprojet3test.png'
 
 
 const Works = () => (
@@ -19,29 +19,33 @@ const Works = () => (
         Projects / Collaborations
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid columns={[1, 1, 1]} gap={6}>
         
         <Section>
           <WorkGridItem
             id="Straffic"
             title="Straffic"
-            thumbnail={thumbWalknote}
+            thumbnail={thumbStraffic}
+            height={200}
           >
            A responsive website coded in React.js, using the API of the strasbourg company of transport (CTS) to help people getting informations about transportation in Strasbourg and/or other useful informations like parkings location or tickets point of sales, in an easily usable and fast way
           </WorkGridItem>
         </Section>
 
-        <Section delay={0.1}>
+        <Section delay={0.1} >
           <WorkGridItem
             id="Dr. BonVoyage"
             title="Dr. BonVoyage"
-            thumbnail={thumbFourPainters}
+            thumbnail={thumbDrbonvoyage}
+
           >
+            <Text text-align='start'>
             An app coded in React Native with a real customer, API AWS serverless for the back, this app was made to help people travelling across the world with useful medical informations of many sorts
+            </Text>
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem id="" title="" thumbnail={thumbInkdrop}>
+          <WorkGridItem id="Fives" title="FIVES" thumbnail={thumbFives}>
             A Static html/css site first project after just 3 weeks of studying
           </WorkGridItem>
         </Section>
