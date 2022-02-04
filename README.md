@@ -1,7 +1,10 @@
 This is a Next.js project
 
 # Getting Started
-First, run the development server:
+First install dependencies : 
+yarn install or npm install
+
+Then, run the development server:
 
 npm run dev
 # or
