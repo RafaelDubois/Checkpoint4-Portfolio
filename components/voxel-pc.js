@@ -53,7 +53,7 @@ const VoxelPc = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.069 + 4.8
+      const scale = scH * 0.075 + 4.8
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
