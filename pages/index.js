@@ -146,7 +146,7 @@ const Page = () => {
             >
               Music,{' '}
             </Link>
-            Watching content creators,Playing Piano, Learning with the web,{' '}
+            Watching content creators,Playing Piano, Learning on the internet,{' '}
             <Link href="https://deepdreamgenerator.com/" target="_blank">
               Generating Art with AI
             </Link>
