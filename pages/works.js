@@ -2,8 +2,8 @@ import { Container, Heading, SimpleGrid, Text, useColorModeValue } from '@chakra
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbFives from '../public/images/works/Captureprojet1.png'
-import thumbStraffic from '../public/images/works/Captureprojet2.png'
+import thumbFives from '../public/images/works/Captureprojet1.PNG'
+import thumbStraffic from '../public/images/works/Captureprojet2.PNG'
 import thumbDrbonvoyage from '../public/images/works/Captureprojet3test.png'
 
 
